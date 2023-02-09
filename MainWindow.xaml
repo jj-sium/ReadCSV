@@ -1,0 +1,23 @@
+﻿<Window x:Class="ghinelli.johanvalentino._4H.ReadCSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ghinelli.johanvalentino._4H.ReadCSV"
+        mc:Ignorable="d"
+        Title="ghinelli.johanvalentino.4h.ReadCSV" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Width="150" Margin="5" Content="Apri" Click="Button_Click"></Button>
+        </StackPanel>
+
+        <DataGrid x:Name="dgDati" Grid.Row="1"></DataGrid>
+    </Grid>
+</Window>
